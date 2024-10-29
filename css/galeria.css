@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+.collage {
+    display: flex; /* Usar flexbox para el diseño */
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten a varias líneas */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.collage img {
+    margin: 10px; /* Espaciado entre imágenes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto 3D */
+    transition: transform 0.3s; /* Transición suave para efectos de hover */
+}
+
+.collage img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .collage img {
+        width: 100%; /* Imágenes ocupan el ancho completo en dispositivos pequeños */
+    }
+}
+
+@media (min-width: 769px) {
+    .collage img {
+        width: calc(33% - 20px); /* Tres imágenes por fila en pantallas grandes */
+    }
+}

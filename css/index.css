@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+}
+
+.header {
+    background-image: url(../assets/img/flor.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.overlay span{
+    font-size: 12px;
+}
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.verificar-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+}
+
+.verificar-btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.verificar-btn a{
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
